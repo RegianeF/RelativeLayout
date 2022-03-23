@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Distância "
+        android:layout_margin="16dp"
+        android:id="@+id/edite_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/edite_distance"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de KMs" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Preço"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/edite_price"
+        android:layout_below="@id/text_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/edite_price"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço por litro" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Autonomia"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/edite_autonomy"
+        android:layout_below="@id/text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/edite_autonomy"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_autonomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kms por litros" />
+
+    <TextView
+        android:id="@+id/string_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_autonomy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="SEU GASTO SERÁ DE" />
+
+    <TextView
+
+        android:id="@+id/final_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/string_value"
+        android:layout_centerHorizontal="true"
+        android:text="R$ 0"
+        android:textColor="@color/black"
+        android:textSize="32dp" />
+
+    <Button
+        android:padding="16dp"
+        android:layout_margin="64dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:layout_below="@id/final_value"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
